@@ -1,0 +1,116 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #C9C7BA;
+  }
+  
+
+  .navbar {
+    background-color: #29292B;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #C9C7BA;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 60px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #29292B, #C9C7BA);
+    font-size: 14px;
+    border-radius: 50px;
+    border-top-right-radius: 0px;
+    margin-right: 56px;
+    transition: 0.5s;
+  }
+
+  .hero {
+    position: relative;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .anim1 {
+    font-size: 70px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+  }
+  
+  .anim2 {
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .feature-image {
+    width: 300px;
+    position: relative;
+    margin-left: 50px;
+  }
+  
+  .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes moveup {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .sepration {
+    height: 7px;
+    background-color: #29292B;
+    /* width: 100%; */
+  }
+  
